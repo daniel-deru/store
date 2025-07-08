@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/splash">
+        <file alias="greenbag">resources/Store Splash.png</file>
+    </qresource>
+    <qresource prefix="/icon">
+        <file alias="greenbag">resources/Icon.png</file>
+    </qresource>
+</RCC>

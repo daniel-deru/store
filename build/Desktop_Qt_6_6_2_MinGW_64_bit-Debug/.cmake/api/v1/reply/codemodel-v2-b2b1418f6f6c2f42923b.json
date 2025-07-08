@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-8464e4e5ae354276ff87.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Store",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Store::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Store-Debug-8037545f5c1a45385616.json",
+					"name" : "Store",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Store_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Store_autogen-Debug-f8ec3870c57fdb96a59f.json",
+					"name" : "Store_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Store_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Store_autogen_timestamp_deps-Debug-ea0157d908c8f1cf084b.json",
+					"name" : "Store_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/danie/Desktop/COS3711 (Advanced Programming)/Assessment 2/Store/build/Desktop_Qt_6_6_2_MinGW_64_bit-Debug",
+		"source" : "C:/Users/danie/Desktop/COS3711 (Advanced Programming)/Assessment 2/Store"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}
