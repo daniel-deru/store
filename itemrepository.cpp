@@ -7,7 +7,7 @@ ItemRepository &ItemRepository::instance() {
 
 void ItemRepository::addItem(const Item &item) {
     for (const Item &existing : items) {
-        if (existing.name == item.name && existing.type == item.type)
+        if (existing.getName() == item.getName() && existing.getName() == item.getType())
             return; // no duplicates
     }
     items.append(item);

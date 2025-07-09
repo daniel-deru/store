@@ -2,6 +2,7 @@
 #include "ItemDialog.h"
 #include "TransactionDialog.h"
 #include "StoreDataModel.h"
+#include "itemrepository.h"
 #include "UdpBroadcaster.h"
 #include "BackupManager.h"
 #include "Customer.h"
@@ -62,15 +63,33 @@ void MainWindow::setupMenusAndToolbar() {
 }
 
 void MainWindow::showItemDialog() {
+
     ItemDialog *dialog = new ItemDialog(this);
     dialog->setAttribute(Qt::WA_DeleteOnClose);
     dialog->show();
 }
 
 void MainWindow::showTransactionDialog() {
-    TransactionDialog *dialog = new TransactionDialog(this);
-    dialog->setAttribute(Qt::WA_DeleteOnClose);
-    dialog->show();
+
+    const int items = ItemRepository::instance().getItems().length();
+
+    if(items > 0)
+    {
+        TransactionDialog *dialog = new TransactionDialog(this);
+        connect(dialog, &TransactionDialog::transactionCompleted, this, &MainWindow::populateTreeView);
+        dialog->setAttribute(Qt::WA_DeleteOnClose);
+        dialog->show();
+    }
+    else
+    {
+        QMessageBox::warning(
+            this,
+            "Warning",
+            "Cannot create transaction since no items are in the store.\n"
+            "Please add items to the store before proceeding with a transaction."
+        );
+    }
+
 }
 
 void MainWindow::showCustomerDialog()
@@ -99,16 +118,16 @@ void MainWindow::populateTreeView() {
 
     QList<Customer> customers = StoreDataModel::instance().getCustomers();
     for (const Customer &c : customers) {
-        QStandardItem *customerItem = new QStandardItem(c.name);
+        QStandardItem *customerItem = new QStandardItem(c.getName());
 
-        for (const Transaction &t : c.transactions) {
-            QStandardItem *timestampItem = new QStandardItem(t.timestamp.toString("yyyy/MM/dd HH:mm"));
+        for (const Transaction &t : c.getTransactions()) {
+            QStandardItem *timestampItem = new QStandardItem(t.getTimestamp().toString("yyyy/MM/dd HH:mm"));
 
-            for (const TransactionItem &ti : t.items) {
+            for (const TransactionItem &ti : t.getItems()) {
                 QList<QStandardItem *> row;
-                row << new QStandardItem(ti.name)
-                    << new QStandardItem(ti.type)
-                    << new QStandardItem(QString::number(ti.quantity));
+                row << new QStandardItem(ti.getName())
+                    << new QStandardItem(ti.getType())
+                    << new QStandardItem(QString::number(ti.getQuantity()));
                 timestampItem->appendRow(row);
             }
 

@@ -7,10 +7,16 @@
 
 class Customer {
 public:
+    Customer(const QString &name = "");
+
+    const QString getName() const;
+    void setName(const QString &newName);
+    void addTransaction(const Transaction &transaction);
+    const QList<Transaction> &getTransactions() const;
+
+private:
     QString name;
     QList<Transaction> transactions;
-
-    Customer(const QString &name = "") : name(name) {}
 };
 
 #endif // CUSTOMER_H

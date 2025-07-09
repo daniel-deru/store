@@ -32,11 +32,10 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         backupmanager.h backupmanager.cpp
         udpbroadcaster.h udpbroadcaster.cpp
         item.h item.cpp
-        Customer.h
-        Transaction.h
+        Customer.h Customer.cpp
+        Transaction.h Transaction.cpp
         resource.qrc
         newcustomerdialog.h newcustomerdialog.cpp
-
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET Store APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR

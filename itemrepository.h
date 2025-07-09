@@ -4,6 +4,7 @@
 #include "Item.h"
 #include <QList>
 
+
 class ItemRepository {
 public:
     static ItemRepository &instance();

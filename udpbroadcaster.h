@@ -3,7 +3,9 @@
 
 #include <QThread>
 #include <QString>
-#include <QUdpSocket>
+
+class QUdpSocket;
+class QObject;
 
 // class QUdpSocket;
 

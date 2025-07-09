@@ -139,7 +139,6 @@ C:/Users/danie/Desktop/COS3711\ (Advanced\ Programming)/Assessment\ 2/Store/buil
   C:/Qt/6.6.2/mingw_64/include/QtGui/qwindowdefs.h \
   C:/Qt/6.6.2/mingw_64/include/QtGui/qwindowdefs_win.h \
   C:/Qt/6.6.2/mingw_64/include/QtWidgets/QDialog \
-  C:/Qt/6.6.2/mingw_64/include/QtWidgets/QWidget \
   C:/Qt/6.6.2/mingw_64/include/QtWidgets/qdialog.h \
   C:/Qt/6.6.2/mingw_64/include/QtWidgets/qsizepolicy.h \
   C:/Qt/6.6.2/mingw_64/include/QtWidgets/qtwidgets-config.h \

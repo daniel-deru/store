@@ -129,6 +129,22 @@ build CMakeFiles/Store.dir/item.cpp.obj: CXX_COMPILER__Store_unscanned_Debug C$:
   OBJECT_DIR = CMakeFiles\Store.dir
   OBJECT_FILE_DIR = CMakeFiles\Store.dir
 
+build CMakeFiles/Store.dir/Customer.cpp.obj: CXX_COMPILER__Store_unscanned_Debug C$:/Users/danie/Desktop/COS3711$ (Advanced$ Programming)/Assessment$ 2/Store/Customer.cpp || cmake_object_order_depends_target_Store
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\Store.dir\Customer.cpp.obj.d
+  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/danie/Desktop/COS3711 (Advanced Programming)/Assessment 2/Store/build/Desktop_Qt_6_6_2_MinGW_64_bit-Debug/Store_autogen/include" -isystem C:/Qt/6.6.2/mingw_64/include/QtCore -isystem C:/Qt/6.6.2/mingw_64/include -isystem C:/Qt/6.6.2/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.6.2/mingw_64/include/QtWidgets -isystem C:/Qt/6.6.2/mingw_64/include/QtGui -isystem C:/Qt/6.6.2/mingw_64/include/QtNetwork
+  OBJECT_DIR = CMakeFiles\Store.dir
+  OBJECT_FILE_DIR = CMakeFiles\Store.dir
+
+build CMakeFiles/Store.dir/Transaction.cpp.obj: CXX_COMPILER__Store_unscanned_Debug C$:/Users/danie/Desktop/COS3711$ (Advanced$ Programming)/Assessment$ 2/Store/Transaction.cpp || cmake_object_order_depends_target_Store
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\Store.dir\Transaction.cpp.obj.d
+  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/danie/Desktop/COS3711 (Advanced Programming)/Assessment 2/Store/build/Desktop_Qt_6_6_2_MinGW_64_bit-Debug/Store_autogen/include" -isystem C:/Qt/6.6.2/mingw_64/include/QtCore -isystem C:/Qt/6.6.2/mingw_64/include -isystem C:/Qt/6.6.2/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.6.2/mingw_64/include/QtWidgets -isystem C:/Qt/6.6.2/mingw_64/include/QtGui -isystem C:/Qt/6.6.2/mingw_64/include/QtNetwork
+  OBJECT_DIR = CMakeFiles\Store.dir
+  OBJECT_FILE_DIR = CMakeFiles\Store.dir
+
 build CMakeFiles/Store.dir/newcustomerdialog.cpp.obj: CXX_COMPILER__Store_unscanned_Debug C$:/Users/danie/Desktop/COS3711$ (Advanced$ Programming)/Assessment$ 2/Store/newcustomerdialog.cpp || cmake_object_order_depends_target_Store
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   DEP_FILE = CMakeFiles\Store.dir\newcustomerdialog.cpp.obj.d
@@ -153,7 +169,7 @@ build CMakeFiles/Store.dir/Store_autogen/EWIEGA46WW/qrc_resource.cpp.obj: CXX_CO
 #############################################
 # Link the executable Store.exe
 
-build Store.exe: CXX_EXECUTABLE_LINKER__Store_Debug CMakeFiles/Store.dir/Store_autogen/mocs_compilation.cpp.obj CMakeFiles/Store.dir/main.cpp.obj CMakeFiles/Store.dir/mainwindow.cpp.obj CMakeFiles/Store.dir/itemdialog.cpp.obj CMakeFiles/Store.dir/transactiondialog.cpp.obj CMakeFiles/Store.dir/storedatamodel.cpp.obj CMakeFiles/Store.dir/itemrepository.cpp.obj CMakeFiles/Store.dir/backupmanager.cpp.obj CMakeFiles/Store.dir/udpbroadcaster.cpp.obj CMakeFiles/Store.dir/item.cpp.obj CMakeFiles/Store.dir/newcustomerdialog.cpp.obj CMakeFiles/Store.dir/Store_autogen/EWIEGA46WW/qrc_resource.cpp.obj | C$:/Qt/6.6.2/mingw_64/lib/libQt6Widgets.a C$:/Qt/6.6.2/mingw_64/lib/libQt6Network.a C$:/Qt/6.6.2/mingw_64/lib/libQt6Gui.a C$:/Qt/6.6.2/mingw_64/lib/libQt6Core.a C$:/Qt/6.6.2/mingw_64/lib/libQt6EntryPoint.a || Store_autogen Store_autogen_timestamp_deps
+build Store.exe: CXX_EXECUTABLE_LINKER__Store_Debug CMakeFiles/Store.dir/Store_autogen/mocs_compilation.cpp.obj CMakeFiles/Store.dir/main.cpp.obj CMakeFiles/Store.dir/mainwindow.cpp.obj CMakeFiles/Store.dir/itemdialog.cpp.obj CMakeFiles/Store.dir/transactiondialog.cpp.obj CMakeFiles/Store.dir/storedatamodel.cpp.obj CMakeFiles/Store.dir/itemrepository.cpp.obj CMakeFiles/Store.dir/backupmanager.cpp.obj CMakeFiles/Store.dir/udpbroadcaster.cpp.obj CMakeFiles/Store.dir/item.cpp.obj CMakeFiles/Store.dir/Customer.cpp.obj CMakeFiles/Store.dir/Transaction.cpp.obj CMakeFiles/Store.dir/newcustomerdialog.cpp.obj CMakeFiles/Store.dir/Store_autogen/EWIEGA46WW/qrc_resource.cpp.obj | C$:/Qt/6.6.2/mingw_64/lib/libQt6Widgets.a C$:/Qt/6.6.2/mingw_64/lib/libQt6Network.a C$:/Qt/6.6.2/mingw_64/lib/libQt6Gui.a C$:/Qt/6.6.2/mingw_64/lib/libQt6Core.a C$:/Qt/6.6.2/mingw_64/lib/libQt6EntryPoint.a || Store_autogen Store_autogen_timestamp_deps
   FLAGS = -DQT_QML_DEBUG -g
   LINK_FLAGS = -mwindows
   LINK_LIBRARIES = C:/Qt/6.6.2/mingw_64/lib/libQt6Widgets.a  C:/Qt/6.6.2/mingw_64/lib/libQt6Network.a  C:/Qt/6.6.2/mingw_64/lib/libQt6Gui.a  -ld3d11  -ldxgi  -ldxguid  -ld3d12  C:/Qt/6.6.2/mingw_64/lib/libQt6Core.a  -lmpr  -luserenv  -lmingw32  C:/Qt/6.6.2/mingw_64/lib/libQt6EntryPoint.a  -lshell32  -lws2_32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
@@ -265,7 +281,7 @@ build Store_autogen/EWIEGA46WW/qrc_resource.cpp | ${cmake_ninja_workdir}Store_au
 #############################################
 # Phony custom command for CMakeFiles\Store_autogen_timestamp_deps
 
-build CMakeFiles/Store_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/Store_autogen_timestamp_deps: phony C$:/Qt/6.6.2/mingw_64/./bin/moc.exe C$:/Qt/6.6.2/mingw_64/./bin/uic.exe C$:/Qt/6.6.2/mingw_64/lib/libQt6Network.a C$:/Qt/6.6.2/mingw_64/lib/libQt6Widgets.a C$:/Qt/6.6.2/mingw_64/lib/libQt6Core.a
+build CMakeFiles/Store_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/Store_autogen_timestamp_deps: phony C$:/Qt/6.6.2/mingw_64/./bin/uic.exe C$:/Qt/6.6.2/mingw_64/./bin/moc.exe C$:/Qt/6.6.2/mingw_64/lib/libQt6Widgets.a C$:/Qt/6.6.2/mingw_64/lib/libQt6Network.a C$:/Qt/6.6.2/mingw_64/lib/libQt6Core.a
 
 
 #############################################

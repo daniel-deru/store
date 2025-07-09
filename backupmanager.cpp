@@ -7,14 +7,15 @@ QList<Customer> BackupManager::backupData;
 void BackupManager::backup() {
     backupData.clear();
     for (const Customer &c : StoreDataModel::instance().getCustomers()) {
-        Customer copy(c.name);
-        for (const Transaction &t : c.transactions) {
+        Customer copy(c.getName());
+        for (const Transaction &t : c.getTransactions()) {
             Transaction tCopy;
-            tCopy.timestamp = t.timestamp;
-            for (const TransactionItem &ti : t.items) {
-                tCopy.items.append({ti.name, ti.type, ti.quantity});
+            tCopy.setTimestamp(t.getTimestamp());
+            for (const TransactionItem &ti : t.getItems()) {
+                tCopy.addItem({ti.getName(), ti.getType(), ti.getQuantity()});
+
             }
-            copy.transactions.append(tCopy);
+            copy.addTransaction(tCopy);
         }
         backupData.append(copy);
     }

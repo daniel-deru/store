@@ -18,13 +18,14 @@ private slots:
     void showCustomerDialog();
     void restoreBackup();
     void broadcastXml();
+    void populateTreeView();
 
 private:
     QTreeView *treeView;
     QStandardItemModel *model;
 
     void setupMenusAndToolbar();
-    void populateTreeView();
+
 };
 
 #endif // MAINWINDOW_H

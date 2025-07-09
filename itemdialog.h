@@ -1,12 +1,13 @@
 #ifndef ITEMDIALOG_H
 #define ITEMDIALOG_H
 
-#include <QWidget>
 #include <QDialog>
 
 class QLineEdit;
 class QComboBox;
 class QPushButton;
+class QDialog;
+class QWidget;
 
 class ItemDialog : public QDialog {
     Q_OBJECT

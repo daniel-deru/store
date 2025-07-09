@@ -5,6 +5,8 @@
 
 class QLineEdit;
 class QPushButton;
+class QWidget;
+
 
 class NewCustomerDialog : public QDialog {
     Q_OBJECT

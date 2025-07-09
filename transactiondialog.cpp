@@ -28,7 +28,7 @@ void TransactionDialog::setupUi() {
     // Customer selection
     customerBox = new QComboBox(this);
     for (const Customer &c : StoreDataModel::instance().getCustomers())
-        customerBox->addItem(c.name);
+        customerBox->addItem(c.getName());
     mainLayout->addWidget(new QLabel("Select the customer:"));
     mainLayout->addWidget(customerBox);
 
@@ -39,7 +39,7 @@ void TransactionDialog::setupUi() {
     // Item selection
     itemBox = new QComboBox(this);
     for (const Item &i : ItemRepository::instance().getItems())
-        itemBox->addItem(i.name);
+        itemBox->addItem(i.getName());
     mainLayout->addWidget(new QLabel("Select the item:"));
     mainLayout->addWidget(itemBox);
 
@@ -88,7 +88,7 @@ void TransactionDialog::handleCustomerAdded(const QString &name)
     const QList<Customer> &customers = StoreDataModel::instance().getCustomers();
 
     for(const Customer &cus : customers) {
-        customerBox->addItem(cus.name);
+        customerBox->addItem(cus.getName());
     }
 
     int index = customerBox->findText(name);
@@ -102,8 +102,8 @@ void TransactionDialog::onAddItem() {
     QString itemType;
 
     for (const Item &i : ItemRepository::instance().getItems()) {
-        if (i.name == itemName) {
-            itemType = i.type;
+        if (i.getName() == itemName) {
+            itemType = i.getType();
             break;
         }
     }
@@ -117,7 +117,7 @@ void TransactionDialog::onAddItem() {
 
 void TransactionDialog::onDone() {
     Transaction t;
-    t.timestamp = QDateTime::currentDateTime();
+    t.setTimestamp(QDateTime::currentDateTime());
 
     for (int i = 0; i < transactionList->count(); ++i) {
         QString entry = transactionList->item(i)->text();
@@ -128,12 +128,12 @@ void TransactionDialog::onDone() {
         QString type = entry.mid(idx1 + 2, 1);
         int quantity = entry.mid(idx2 + 4).toInt();
 
-        t.items.append(TransactionItem{name, type, quantity});
+        t.addItem(TransactionItem{name, type, quantity});
     }
 
     QString customerName = customerBox->currentText();
     StoreDataModel::instance().addTransaction(customerName, t);
     BackupManager::backup();
-
+    emit transactionCompleted();
     close();
 }

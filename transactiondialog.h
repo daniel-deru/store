@@ -1,7 +1,6 @@
 #ifndef TRANSACTIONDIALOG_H
 #define TRANSACTIONDIALOG_H
 
-#include <QWidget>
 #include <QDialog>
 
 class QComboBox;
@@ -14,6 +13,9 @@ class TransactionDialog : public QDialog {
 
 public:
     explicit TransactionDialog(QWidget *parent = nullptr);
+
+signals:
+    void transactionCompleted();
 
 private slots:
     void onAddItem();
