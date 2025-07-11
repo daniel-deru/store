@@ -25,12 +25,22 @@ void TransactionDialog::setupUi() {
     QVBoxLayout *mainLayout = new QVBoxLayout(this);
     mainLayout->addWidget(new QLabel("Complete the required data"));
 
-    // Customer selection
-    customerBox = new QComboBox(this);
+    QList<Customer> customers = StoreDataModel::instance().getCustomers();
+
+    customerBox = new QComboBox();
+    customerBox->setParent(this);
     for (const Customer &c : StoreDataModel::instance().getCustomers())
         customerBox->addItem(c.getName());
-    mainLayout->addWidget(new QLabel("Select the customer:"));
+
+    customerLabel = new QLabel("Select the customer:");
+
+    mainLayout->addWidget(customerLabel);
     mainLayout->addWidget(customerBox);
+
+    if(customers.length() <= 0) {
+        customerBox->hide();
+        customerLabel->hide();
+    }
 
     newCustomerButton = new QPushButton("New Customer", this);
     mainLayout->addWidget(newCustomerButton);
@@ -84,6 +94,8 @@ void TransactionDialog::openNewCustomerDialog() {
 void TransactionDialog::handleCustomerAdded(const QString &name)
 {
     customerBox->clear();
+    customerBox->show();
+    customerLabel->show();
 
     const QList<Customer> &customers = StoreDataModel::instance().getCustomers();
 
@@ -95,11 +107,18 @@ void TransactionDialog::handleCustomerAdded(const QString &name)
     if(index >= 0) {
         customerBox->setCurrentIndex(index);
     }
+
 }
 
 void TransactionDialog::onAddItem() {
     QString itemName = itemBox->currentText();
+    int quantity = quantitySpin->value();
     QString itemType;
+
+    if(quantity <= 0)
+    {
+        return;
+    }
 
     for (const Item &i : ItemRepository::instance().getItems()) {
         if (i.getName() == itemName) {
@@ -108,7 +127,7 @@ void TransactionDialog::onAddItem() {
         }
     }
 
-    int quantity = quantitySpin->value();
+
     QString entry = QString("%1 (%2) x %3").arg(itemName).arg(itemType).arg(quantity);
     transactionList->addItem(entry);
 
@@ -116,6 +135,13 @@ void TransactionDialog::onAddItem() {
 }
 
 void TransactionDialog::onDone() {
+
+    if(transactionList->count() <= 0)
+    {
+        close();
+        return;
+    }
+
     Transaction t;
     t.setTimestamp(QDateTime::currentDateTime());
 
@@ -133,7 +159,8 @@ void TransactionDialog::onDone() {
 
     QString customerName = customerBox->currentText();
     StoreDataModel::instance().addTransaction(customerName, t);
-    BackupManager::backup();
+    Customer backupCustomer = StoreDataModel::instance().findCustomer(customerName);
+    BackupManager::backupCustomer(backupCustomer);
     emit transactionCompleted();
     close();
 }

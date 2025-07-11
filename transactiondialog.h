@@ -7,6 +7,7 @@ class QComboBox;
 class QSpinBox;
 class QPushButton;
 class QListWidget;
+class QLabel;
 
 class TransactionDialog : public QDialog {
     Q_OBJECT
@@ -31,6 +32,7 @@ private:
     QPushButton *doneButton;
     QListWidget *transactionList;
     QPushButton *newCustomerButton;
+    QLabel *customerLabel;
 
 
     void setupUi();

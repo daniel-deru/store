@@ -1,24 +1,38 @@
 #include "Item.h"
 
-Item::Item(const QString &name, const QString &type)
-    : name(name), type(type) {}
+Item::Item(const QString &name, const QString &type, double price, int available)
+    : name(name), type(type), price(price), available(available) {}
 
-void Item::setName(QString &newName)
-{
-    name = newName;
-}
-
-void Item::setType(QString &newType)
-{
-    type = newType;
-}
-
-const QString &Item::getName() const
+QString Item::getName() const
 {
     return name;
 }
-
-const QString &Item::getType() const
+QString Item::getType() const
 {
     return type;
+}
+double Item::getPrice() const
+{
+    return price;
+}
+int Item::getAvailable() const
+{
+    return available;
+}
+
+void Item::setName(const QString &name)
+{
+    this->name = name;
+}
+void Item::setType(const QString &type)
+{
+    this->type = type;
+}
+void Item::setPrice(double price)
+{
+    this->price = price;
+}
+void Item::setAvailable(int available)
+{
+    this->available = available;
 }

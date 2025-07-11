@@ -19,12 +19,16 @@ private slots:
     void restoreBackup();
     void broadcastXml();
     void populateTreeView();
+    void showHelpDialog();
+    void showAboutDialog();
+    void showStatus(const QString message, int durationMs = 3000);
 
 private:
     QTreeView *treeView;
     QStandardItemModel *model;
 
     void setupMenusAndToolbar();
+
 
 };
 

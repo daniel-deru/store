@@ -5,17 +5,23 @@
 
 class Item {
 public:
-    Item(const QString &name = "", const QString &type = "");
-    void setName(QString &newName);
-    void setType(QString &newType);
+    Item(const QString &name = "", const QString &type = "", double price = 0.0, int available = 0);
 
-    const QString &getName() const;
-    const QString &getType() const;
+    QString getName() const;
+    QString getType() const;
+    double getPrice() const;
+    int getAvailable() const;
 
+    void setName(const QString &name);
+    void setType(const QString &type);
+    void setPrice(double price);
+    void setAvailable(int available);
 
 private:
     QString name;
-    QString type; // "B" = Book, "M" = Magazine
+    QString type;
+    double price;
+    int available;
 };
 
 #endif // ITEM_H

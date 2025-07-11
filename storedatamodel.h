@@ -16,6 +16,7 @@ public:
     void addCustomer(const QString &name);
     void addTransaction(const QString &customerName, const Transaction &t);
     QList<Customer> getCustomers() const;
+    Customer findCustomer(const QString &name) const;
     QString toXml() const;
 
 private:

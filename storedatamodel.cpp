@@ -27,14 +27,27 @@ QList<Customer> StoreDataModel::getCustomers() const {
     return customers;
 }
 
+Customer StoreDataModel::findCustomer(const QString &name) const
+{
+    Customer customerFound;
+
+    for(const Customer &customer : customers) {
+        if(customer.getName() == name) {
+            customerFound = customer;
+        }
+    }
+
+    return customerFound;
+}
+
 QString StoreDataModel::toXml() const {
-    QString xml = "<transactions>";
+    QString xml = "<ModelData>";
     for (const Customer &c : customers) {
         xml += "<customer name=\"" + c.getName() + "\">";
         for (const Transaction &t : c.getTransactions()) {
-            xml += "<transaction time=\"" + t.getTimestamp().toString(Qt::ISODate) + "\">";
+            xml += "<transaction date=\"" + t.getTimestamp().toString(Qt::ISODate) + "\">";
             for (const TransactionItem &ti : t.getItems()) {
-                xml += "<item name=\"" + ti.getName() +
+                xml += "<lineitem name=\"" + ti.getName() +
                        "\" type=\"" + ti.getType() +
                        "\" quantity=\"" + QString::number(ti.getQuantity()) + "\"/>";
             }
@@ -42,6 +55,6 @@ QString StoreDataModel::toXml() const {
         }
         xml += "</customer>";
     }
-    xml += "</transactions>";
+    xml += "</ModelData>";
     return xml;
 }

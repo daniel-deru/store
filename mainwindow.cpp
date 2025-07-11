@@ -53,8 +53,20 @@ void MainWindow::setupMenusAndToolbar() {
     addMenu->addAction(addTransactionAction);
     addMenu->addAction(addCustomerAction);
 
+    QMenu *helpMenu = menuBar()->addMenu("Help");
+
+    QAction *helpAction = new QAction("Help", this);
+    QAction *aboutAction = new QAction("About", this);
+
+    helpMenu->addAction(helpAction);
+    helpMenu->addAction(aboutAction);
+
+    connect(helpAction, &QAction::triggered, this, &MainWindow::showHelpDialog);
+    connect(aboutAction, &QAction::triggered, this, &MainWindow::showAboutDialog);
+
     QToolBar *toolbar = addToolBar("Main Toolbar");
     toolbar->addAction(addItemAction);
+    toolbar->addAction(addCustomerAction);
     toolbar->addAction(addTransactionAction);
     toolbar->addAction(restoreAction);
     toolbar->addAction(broadcastAction);
@@ -77,6 +89,9 @@ void MainWindow::showTransactionDialog() {
     {
         TransactionDialog *dialog = new TransactionDialog(this);
         connect(dialog, &TransactionDialog::transactionCompleted, this, &MainWindow::populateTreeView);
+        connect(dialog, &TransactionDialog::transactionCompleted, this, [this]() {
+            showStatus("Transaction Completed");
+        });
         dialog->setAttribute(Qt::WA_DeleteOnClose);
         dialog->show();
     }
@@ -95,12 +110,46 @@ void MainWindow::showTransactionDialog() {
 void MainWindow::showCustomerDialog()
 {
     NewCustomerDialog * dialog = new NewCustomerDialog(this);
+
+    connect(dialog, &NewCustomerDialog::customerAdded, this, [this](const QString &name) {
+            showStatus("New Customer Added: " + name);
+    });
+
     dialog->setAttribute(Qt::WA_DeleteOnClose);
     dialog->show();
 }
 
+void MainWindow::showHelpDialog() {
+    QString helpText =
+        "<b>StoreApp Help</b><br><br>"
+        "• <b>New Customer:</b> Add a customer by name.<br>"
+        "• <b>Items:</b> Add store items (books, magazines).<br>"
+        "• <b>Transactions:</b> Record purchases for customers.<br>"
+        "• <b>Backup:</b> Items are backed up in memory automatically.<br><br>"
+        "All transactions are grouped per customer in the main view.";
+
+    QMessageBox::information(this, "Help", helpText);
+}
+
+void MainWindow::showAboutDialog() {
+    QString aboutText =
+        "<b>StoreApp</b><br>"
+        "Version 1.0<br><br>"
+        "Developed using Qt 6<br>"
+        "© 2025 Your Name or Company";
+
+    QMessageBox::about(this, "About StoreApp", aboutText);
+}
+
+void MainWindow::showStatus(const QString message, int durationMs) {
+    statusBar()->showMessage(message, durationMs);
+}
+
+
+
 void MainWindow::restoreBackup() {
-    BackupManager::restore();
+    BackupManager::restoreCustomers();
+    BackupManager::restoreItems();
     populateTreeView();
     statusBar()->showMessage("Backup restored", 3000);
 }

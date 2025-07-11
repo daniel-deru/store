@@ -1,71 +1,73 @@
 # ninja log v5
-1150	5263	7735072126118642	CMakeFiles/Store.dir/udpbroadcaster.cpp.obj	83104147596624d0
-38	592	7737412559018116	Store_autogen/timestamp	e0e743021260b30c
-38	592	7737412559018116	Store_autogen/mocs_compilation.cpp	e0e743021260b30c
-807	4205	7737388456123785	CMakeFiles/Store.dir/main.cpp.obj	6301c22a7630c541
-38	592	7737412559018116	C:/Users/danie/Desktop/COS3711 (Advanced Programming)/Assessment 2/Store/build/Desktop_Qt_6_6_2_MinGW_64_bit-Debug/Store_autogen/mocs_compilation.cpp	e0e743021260b30c
-38	592	7737412559018116	C:/Users/danie/Desktop/COS3711 (Advanced Programming)/Assessment 2/Store/build/Desktop_Qt_6_6_2_MinGW_64_bit-Debug/Store_autogen/timestamp	e0e743021260b30c
-633	4729	7737412599336704	CMakeFiles/Store.dir/itemrepository.cpp.obj	97729b401b8e8db1
-228	1681	7737411776127430	CMakeFiles/Store.dir/item.cpp.obj	bf31e4b31536ff4
-654	6211	7737408122496240	CMakeFiles/Store.dir/storedatamodel.cpp.obj	73d7a1f8c1a05b24
-637	7868	7737408139848121	CMakeFiles/Store.dir/Store_autogen/mocs_compilation.cpp.obj	58ad38d46e5c2ac8
-220	3365	7737411791963019	CMakeFiles/Store.dir/itemdialog.cpp.obj	af8fc025295c03d0
-628	6583	7737412617778795	CMakeFiles/Store.dir/transactiondialog.cpp.obj	7c7ac0eac5dfc8ee
-222	3933	7737411798711250	CMakeFiles/Store.dir/mainwindow.cpp.obj	2abc497eb845998e
+653	2889	7737435859584053	CMakeFiles/Store.dir/udpbroadcaster.cpp.obj	83104147596624d0
+16	188	7739560093984195	Store_autogen/timestamp	e0e743021260b30c
+16	188	7739560093984195	Store_autogen/mocs_compilation.cpp	e0e743021260b30c
+837	5661	7739531684846167	CMakeFiles/Store.dir/main.cpp.obj	6301c22a7630c541
+16	188	7739560093984195	C:/Users/danie/Desktop/COS3711 (Advanced Programming)/Assessment 2/Store/build/Desktop_Qt_6_6_2_MinGW_64_bit-Debug/Store_autogen/mocs_compilation.cpp	e0e743021260b30c
+16	188	7739560093984195	C:/Users/danie/Desktop/COS3711 (Advanced Programming)/Assessment 2/Store/build/Desktop_Qt_6_6_2_MinGW_64_bit-Debug/Store_autogen/timestamp	e0e743021260b30c
+721	3577	7739522914305278	CMakeFiles/Store.dir/itemrepository.cpp.obj	97729b401b8e8db1
+725	3575	7739522913784211	CMakeFiles/Store.dir/item.cpp.obj	bf31e4b31536ff4
+1625	7347	7739548762834978	CMakeFiles/Store.dir/storedatamodel.cpp.obj	73d7a1f8c1a05b24
+1597	7962	7739548770128466	CMakeFiles/Store.dir/Store_autogen/mocs_compilation.cpp.obj	58ad38d46e5c2ac8
+201	2359	7739560114563423	CMakeFiles/Store.dir/itemdialog.cpp.obj	af8fc025295c03d0
+1020	4587	7739559428132026	CMakeFiles/Store.dir/transactiondialog.cpp.obj	7c7ac0eac5dfc8ee
+1604	9053	7739548781046033	CMakeFiles/Store.dir/mainwindow.cpp.obj	2abc497eb845998e
 178	297	7736528318810810	Store_autogen/EWIEGA46WW/qrc_resource.cpp	38e4f743e2a94545
-211	2510	7737408609827506	CMakeFiles/Store.dir/backupmanager.cpp.obj	b3352d9895472e55
-6583	7598	7737412628986743	Store.exe	e206834375490021
+1620	7453	7739548764993253	CMakeFiles/Store.dir/backupmanager.cpp.obj	b3352d9895472e55
+2361	3084	7739560122874342	Store.exe	24ae647e64e79402
 5	620	7737419919532187	build.ninja	65cc518a039ed723
 178	297	7736528318810810	C:/Users/danie/Desktop/COS3711 (Advanced Programming)/Assessment 2/Store/build/Desktop_Qt_6_6_2_MinGW_64_bit-Debug/Store_autogen/EWIEGA46WW/qrc_resource.cpp	38e4f743e2a94545
 297	1092	7736528326740949	CMakeFiles/Store.dir/Store_autogen/EWIEGA46WW/qrc_resource.cpp.obj	4b0e4ee3d89472d6
-661	7607	7737408137218638	CMakeFiles/Store.dir/newcustomerdialog.cpp.obj	d97bb7379e9ccbc8
-658	7091	7737408132056211	CMakeFiles/Store.dir/Customer.cpp.obj	92c08daa45a81c4c
-39	1841	7737421109960548	Store_autogen/timestamp	e0e743021260b30c
-39	1841	7737421109960548	Store_autogen/mocs_compilation.cpp	e0e743021260b30c
-39	1841	7737421109960548	C:/Users/danie/Desktop/COS3711 (Advanced Programming)/Assessment 2/Store/build/Desktop_Qt_6_6_2_MinGW_64_bit-Debug/Store_autogen/timestamp	e0e743021260b30c
-39	1841	7737421109960548	C:/Users/danie/Desktop/COS3711 (Advanced Programming)/Assessment 2/Store/build/Desktop_Qt_6_6_2_MinGW_64_bit-Debug/Store_autogen/mocs_compilation.cpp	e0e743021260b30c
-1872	8002	7737421171484806	CMakeFiles/Store.dir/Customer.cpp.obj	92c08daa45a81c4c
-1877	8454	7737421177079159	CMakeFiles/Store.dir/Transaction.cpp.obj	8899f968631bfce9
-1883	9011	7737421182969164	CMakeFiles/Store.dir/newcustomerdialog.cpp.obj	d97bb7379e9ccbc8
-1852	9920	7737421191963138	CMakeFiles/Store.dir/itemdialog.cpp.obj	af8fc025295c03d0
-1842	10027	7737421193124561	CMakeFiles/Store.dir/Store_autogen/mocs_compilation.cpp.obj	58ad38d46e5c2ac8
-14	623	7737422988806552	Store_autogen/timestamp	e0e743021260b30c
-14	623	7737422988806552	Store_autogen/mocs_compilation.cpp	e0e743021260b30c
-14	623	7737422988806552	C:/Users/danie/Desktop/COS3711 (Advanced Programming)/Assessment 2/Store/build/Desktop_Qt_6_6_2_MinGW_64_bit-Debug/Store_autogen/timestamp	e0e743021260b30c
-14	623	7737422988806552	C:/Users/danie/Desktop/COS3711 (Advanced Programming)/Assessment 2/Store/build/Desktop_Qt_6_6_2_MinGW_64_bit-Debug/Store_autogen/mocs_compilation.cpp	e0e743021260b30c
-643	3970	7737423021421496	CMakeFiles/Store.dir/Transaction.cpp.obj	8899f968631bfce9
-640	4845	7737423031485116	CMakeFiles/Store.dir/Customer.cpp.obj	92c08daa45a81c4c
-646	5602	7737423039097049	CMakeFiles/Store.dir/newcustomerdialog.cpp.obj	d97bb7379e9ccbc8
-629	5830	7737423041341178	CMakeFiles/Store.dir/itemdialog.cpp.obj	af8fc025295c03d0
-624	5859	7737423041597177	CMakeFiles/Store.dir/Store_autogen/mocs_compilation.cpp.obj	58ad38d46e5c2ac8
-28	1004	7737430686569482	Store_autogen/timestamp	e0e743021260b30c
-28	1004	7737430686569482	Store_autogen/mocs_compilation.cpp	e0e743021260b30c
-28	1004	7737430686569482	C:/Users/danie/Desktop/COS3711 (Advanced Programming)/Assessment 2/Store/build/Desktop_Qt_6_6_2_MinGW_64_bit-Debug/Store_autogen/timestamp	e0e743021260b30c
-28	1004	7737430686569482	C:/Users/danie/Desktop/COS3711 (Advanced Programming)/Assessment 2/Store/build/Desktop_Qt_6_6_2_MinGW_64_bit-Debug/Store_autogen/mocs_compilation.cpp	e0e743021260b30c
+1630	7468	7739548765089860	CMakeFiles/Store.dir/newcustomerdialog.cpp.obj	d97bb7379e9ccbc8
 1030	7029	7737430745356592	CMakeFiles/Store.dir/Customer.cpp.obj	92c08daa45a81c4c
 1034	7051	7737430745383410	CMakeFiles/Store.dir/Transaction.cpp.obj	8899f968631bfce9
-1025	7382	7737430750989335	CMakeFiles/Store.dir/backupmanager.cpp.obj	b3352d9895472e55
-1008	7487	7737430752196466	CMakeFiles/Store.dir/itemdialog.cpp.obj	af8fc025295c03d0
-1038	8052	7737430757892456	CMakeFiles/Store.dir/newcustomerdialog.cpp.obj	d97bb7379e9ccbc8
-1005	8216	7737430759545973	CMakeFiles/Store.dir/Store_autogen/mocs_compilation.cpp.obj	58ad38d46e5c2ac8
-37	504	7737431469282999	Store_autogen/timestamp	e0e743021260b30c
-37	504	7737431469282999	Store_autogen/mocs_compilation.cpp	e0e743021260b30c
-37	504	7737431469282999	C:/Users/danie/Desktop/COS3711 (Advanced Programming)/Assessment 2/Store/build/Desktop_Qt_6_6_2_MinGW_64_bit-Debug/Store_autogen/timestamp	e0e743021260b30c
-37	504	7737431469282999	C:/Users/danie/Desktop/COS3711 (Advanced Programming)/Assessment 2/Store/build/Desktop_Qt_6_6_2_MinGW_64_bit-Debug/Store_autogen/mocs_compilation.cpp	e0e743021260b30c
-550	4570	7737431508863108	CMakeFiles/Store.dir/storedatamodel.cpp.obj	73d7a1f8c1a05b24
-545	6086	7737431524012216	CMakeFiles/Store.dir/mainwindow.cpp.obj	2abc497eb845998e
-34	443	7737432144968848	Store_autogen/timestamp	e0e743021260b30c
-34	443	7737432144968848	Store_autogen/mocs_compilation.cpp	e0e743021260b30c
-34	443	7737432144968848	C:/Users/danie/Desktop/COS3711 (Advanced Programming)/Assessment 2/Store/build/Desktop_Qt_6_6_2_MinGW_64_bit-Debug/Store_autogen/timestamp	e0e743021260b30c
-34	443	7737432144968848	C:/Users/danie/Desktop/COS3711 (Advanced Programming)/Assessment 2/Store/build/Desktop_Qt_6_6_2_MinGW_64_bit-Debug/Store_autogen/mocs_compilation.cpp	e0e743021260b30c
-480	4902	7737432188488243	CMakeFiles/Store.dir/transactiondialog.cpp.obj	7c7ac0eac5dfc8ee
-4902	5653	7737432197045459	Store.exe	24ae647e64e79402
-6	644	7737435837650924	Store_autogen/timestamp	e0e743021260b30c
-6	644	7737435837650924	Store_autogen/mocs_compilation.cpp	e0e743021260b30c
-6	644	7737435837650924	C:/Users/danie/Desktop/COS3711 (Advanced Programming)/Assessment 2/Store/build/Desktop_Qt_6_6_2_MinGW_64_bit-Debug/Store_autogen/timestamp	e0e743021260b30c
-6	644	7737435837650924	C:/Users/danie/Desktop/COS3711 (Advanced Programming)/Assessment 2/Store/build/Desktop_Qt_6_6_2_MinGW_64_bit-Debug/Store_autogen/mocs_compilation.cpp	e0e743021260b30c
-653	2889	7737435859584053	CMakeFiles/Store.dir/udpbroadcaster.cpp.obj	83104147596624d0
-645	3365	7737435865373873	CMakeFiles/Store.dir/Store_autogen/mocs_compilation.cpp.obj	58ad38d46e5c2ac8
-647	3574	7737435867464346	CMakeFiles/Store.dir/transactiondialog.cpp.obj	7c7ac0eac5dfc8ee
-650	3721	7737435868936883	CMakeFiles/Store.dir/mainwindow.cpp.obj	2abc497eb845998e
-3721	4460	7737435876326146	Store.exe	24ae647e64e79402
+11	377	7739561478810857	Store_autogen/timestamp	e0e743021260b30c
+11	377	7739561478810857	Store_autogen/mocs_compilation.cpp	e0e743021260b30c
+11	377	7739561478810857	C:/Users/danie/Desktop/COS3711 (Advanced Programming)/Assessment 2/Store/build/Desktop_Qt_6_6_2_MinGW_64_bit-Debug/Store_autogen/timestamp	e0e743021260b30c
+11	377	7739561478810857	C:/Users/danie/Desktop/COS3711 (Advanced Programming)/Assessment 2/Store/build/Desktop_Qt_6_6_2_MinGW_64_bit-Debug/Store_autogen/mocs_compilation.cpp	e0e743021260b30c
+399	3190	7739561505562219	CMakeFiles/Store.dir/transactiondialog.cpp.obj	7c7ac0eac5dfc8ee
+3191	3933	7739561514316190	Store.exe	24ae647e64e79402
+28	584	7739565505534766	Store_autogen/timestamp	e0e743021260b30c
+28	584	7739565505534766	Store_autogen/mocs_compilation.cpp	e0e743021260b30c
+28	584	7739565505534766	C:/Users/danie/Desktop/COS3711 (Advanced Programming)/Assessment 2/Store/build/Desktop_Qt_6_6_2_MinGW_64_bit-Debug/Store_autogen/timestamp	e0e743021260b30c
+28	584	7739565505534766	C:/Users/danie/Desktop/COS3711 (Advanced Programming)/Assessment 2/Store/build/Desktop_Qt_6_6_2_MinGW_64_bit-Debug/Store_autogen/mocs_compilation.cpp	e0e743021260b30c
+609	3618	7739565534783129	CMakeFiles/Store.dir/transactiondialog.cpp.obj	7c7ac0eac5dfc8ee
+3619	4358	7739565543234719	Store.exe	24ae647e64e79402
+39	2500	7739569688956996	Store_autogen/timestamp	e0e743021260b30c
+39	2500	7739569688956996	Store_autogen/mocs_compilation.cpp	e0e743021260b30c
+39	2500	7739569688956996	C:/Users/danie/Desktop/COS3711 (Advanced Programming)/Assessment 2/Store/build/Desktop_Qt_6_6_2_MinGW_64_bit-Debug/Store_autogen/timestamp	e0e743021260b30c
+39	2500	7739569688956996	C:/Users/danie/Desktop/COS3711 (Advanced Programming)/Assessment 2/Store/build/Desktop_Qt_6_6_2_MinGW_64_bit-Debug/Store_autogen/mocs_compilation.cpp	e0e743021260b30c
+2502	7863	7739569745865872	CMakeFiles/Store.dir/Store_autogen/mocs_compilation.cpp.obj	58ad38d46e5c2ac8
+2512	8189	7739569750152376	CMakeFiles/Store.dir/transactiondialog.cpp.obj	7c7ac0eac5dfc8ee
+2507	8440	7739569752673997	CMakeFiles/Store.dir/mainwindow.cpp.obj	2abc497eb845998e
+8440	9457	7739569762848643	Store.exe	24ae647e64e79402
+7	206	7739573173781163	Store_autogen/timestamp	e0e743021260b30c
+7	206	7739573173781163	Store_autogen/mocs_compilation.cpp	e0e743021260b30c
+7	206	7739573173781163	C:/Users/danie/Desktop/COS3711 (Advanced Programming)/Assessment 2/Store/build/Desktop_Qt_6_6_2_MinGW_64_bit-Debug/Store_autogen/timestamp	e0e743021260b30c
+7	206	7739573173781163	C:/Users/danie/Desktop/COS3711 (Advanced Programming)/Assessment 2/Store/build/Desktop_Qt_6_6_2_MinGW_64_bit-Debug/Store_autogen/mocs_compilation.cpp	e0e743021260b30c
+219	2361	7739573194191406	CMakeFiles/Store.dir/itemdialog.cpp.obj	af8fc025295c03d0
+2362	3098	7739573202642169	Store.exe	24ae647e64e79402
+6	180	7739575709204438	Store_autogen/timestamp	e0e743021260b30c
+6	180	7739575709204438	Store_autogen/mocs_compilation.cpp	e0e743021260b30c
+6	180	7739575709204438	C:/Users/danie/Desktop/COS3711 (Advanced Programming)/Assessment 2/Store/build/Desktop_Qt_6_6_2_MinGW_64_bit-Debug/Store_autogen/timestamp	e0e743021260b30c
+6	180	7739575709204438	C:/Users/danie/Desktop/COS3711 (Advanced Programming)/Assessment 2/Store/build/Desktop_Qt_6_6_2_MinGW_64_bit-Debug/Store_autogen/mocs_compilation.cpp	e0e743021260b30c
+194	2528	7739575731475503	CMakeFiles/Store.dir/transactiondialog.cpp.obj	7c7ac0eac5dfc8ee
+2529	3280	7739575740138599	Store.exe	24ae647e64e79402
+36	565	7739577515506527	Store_autogen/timestamp	e0e743021260b30c
+36	565	7739577515506527	Store_autogen/mocs_compilation.cpp	e0e743021260b30c
+36	565	7739577515506527	C:/Users/danie/Desktop/COS3711 (Advanced Programming)/Assessment 2/Store/build/Desktop_Qt_6_6_2_MinGW_64_bit-Debug/Store_autogen/timestamp	e0e743021260b30c
+36	565	7739577515506527	C:/Users/danie/Desktop/COS3711 (Advanced Programming)/Assessment 2/Store/build/Desktop_Qt_6_6_2_MinGW_64_bit-Debug/Store_autogen/mocs_compilation.cpp	e0e743021260b30c
+598	4007	7739577548979555	CMakeFiles/Store.dir/transactiondialog.cpp.obj	7c7ac0eac5dfc8ee
+4009	4845	7739577558428554	Store.exe	24ae647e64e79402
+28	990	7739578044487444	Store_autogen/timestamp	e0e743021260b30c
+28	990	7739578044487444	Store_autogen/mocs_compilation.cpp	e0e743021260b30c
+28	990	7739578044487444	C:/Users/danie/Desktop/COS3711 (Advanced Programming)/Assessment 2/Store/build/Desktop_Qt_6_6_2_MinGW_64_bit-Debug/Store_autogen/timestamp	e0e743021260b30c
+28	990	7739578044487444	C:/Users/danie/Desktop/COS3711 (Advanced Programming)/Assessment 2/Store/build/Desktop_Qt_6_6_2_MinGW_64_bit-Debug/Store_autogen/mocs_compilation.cpp	e0e743021260b30c
+1016	5262	7739578087187253	CMakeFiles/Store.dir/transactiondialog.cpp.obj	7c7ac0eac5dfc8ee
+5263	6016	7739578095798369	Store.exe	24ae647e64e79402
+19	237	7739579032961156	Store_autogen/timestamp	e0e743021260b30c
+19	237	7739579032961156	Store_autogen/mocs_compilation.cpp	e0e743021260b30c
+19	237	7739579032961156	C:/Users/danie/Desktop/COS3711 (Advanced Programming)/Assessment 2/Store/build/Desktop_Qt_6_6_2_MinGW_64_bit-Debug/Store_autogen/timestamp	e0e743021260b30c
+19	237	7739579032961156	C:/Users/danie/Desktop/COS3711 (Advanced Programming)/Assessment 2/Store/build/Desktop_Qt_6_6_2_MinGW_64_bit-Debug/Store_autogen/mocs_compilation.cpp	e0e743021260b30c
+253	2945	7739579058855656	CMakeFiles/Store.dir/mainwindow.cpp.obj	2abc497eb845998e
+2947	3680	7739579067402603	Store.exe	24ae647e64e79402
